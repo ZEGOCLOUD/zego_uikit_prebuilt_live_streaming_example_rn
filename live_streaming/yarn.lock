@@ -1818,10 +1818,10 @@
   resolved "https://registry.yarnpkg.com/@zegocloud/zego-uikit-prebuilt-live-streaming-rn/-/zego-uikit-prebuilt-live-streaming-rn-1.2.2.tgz#10d5ccbde21b074137fec34046000b06a9d7f51c"
   integrity sha512-JaC/7AT3ri5X/kpewSVupUIRvWLlMonR+HhBO/Y6PlYHrmdSZAxz04UKKr3EbYYGQnzX0j5C7U0JFVdMW4/Nsg==
 
-"@zegocloud/zego-uikit-rn@^1.11.0":
-  version "1.11.0"
-  resolved "https://registry.yarnpkg.com/@zegocloud/zego-uikit-rn/-/zego-uikit-rn-1.11.0.tgz#1337978055be085956257cc88050333f086c8552"
-  integrity sha512-gJy+Qxkxl+iAQJxDRPSP8mZCQsTxGEA4Uqa00F9ebf61ezUW1qp6MEpR4d8Dqo7Sor2skFJB40XK1H06TyJCYA==
+"@zegocloud/zego-uikit-rn@^1.11.1":
+  version "1.11.1"
+  resolved "https://registry.yarnpkg.com/@zegocloud/zego-uikit-rn/-/zego-uikit-rn-1.11.1.tgz#0a0cb9597723a0dfb241b96600d837c70e5736c1"
+  integrity sha512-93TjEcPsFw/XxEsLnoee556T2OGmsHhGuyrlL6m3S1wU6faQqB8PRBsKttXQve44Zev8hKCp3FARnqLAJHoqew==
   dependencies:
     "@react-navigation/native" "^6.1.0"
     "@react-navigation/native-stack" "^6.9.5"
