@@ -5,6 +5,7 @@ import { StyleSheet, View, Text, Button } from 'react-native';
 import ZegoUIKitPrebuiltLiveStreaming, {
   AUDIENCE_DEFAULT_CONFIG,
 } from '@zegocloud/zego-uikit-prebuilt-live-streaming-rn';
+import ZegoUIKitSignalingPlugin from '@zegocloud/zego-uikit-signaling-plugin-rn';
 
 export default function AudiencePage(props) {
   const { route } = props;
@@ -25,6 +26,7 @@ export default function AudiencePage(props) {
             props.navigation.navigate('HomePage');
           },
         }}
+        plugins={[ZegoUIKitSignalingPlugin]}
       />
     </View>
   );
