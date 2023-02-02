@@ -29,23 +29,16 @@
 - Real-time audience capacity display
 - Device management
 - Extendable menu bar
+- Co-hosting (make co-host & apply co-host)
 
 
 ## Recommended resources
 
+- I want to get started, Follow the steps to get started swiftly: [Quick Start](https://docs.zegocloud.com/article/14924)
 
-<div class="md-resource-layout">
-  <div class="md-resource-layout-item">
-    <div class="item-top">
-      <div class="resource-title">I want to get started: </div>
-      <div class="resource-desc">Follow the steps to get started swiftly. </div>
-      <a href="https://docs.zegocloud.com/article/14924" class="md-btn-primary important" target="_blank">
-        <span class="text">QUICK START</span>
-      </a>
-    </div>
-    <div class="item-bottom">
-      <p class="margin-top-20">To configure prebuilt UI for a custom experience: </p>
-      <a href="https://docs.zegocloud.com/article/14879" class="list-link-item">Custom Prebuilt UI</a>
-    </div>
-  </div>
-</div>
+- To configure prebuilt UI for a custom experience: [Custom Prebuilt UI](https://docs.zegocloud.com/article/14879)
+- 
+
+- To finest-grained build a call, you may try antoher one: [Live Streaming SDK](https://docs.zegocloud.com/article/14317)
+
+- If you have any questions regarding bugs and feature requests, visit the [ZEGOCLOUD community](https://discord.gg/EtNRATttyp) or email us at global_support@zegocloud.com.
