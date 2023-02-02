@@ -37,7 +37,6 @@
 - I want to get started, Follow the steps to get started swiftly: [Quick Start](https://docs.zegocloud.com/article/14924)
 
 - To configure prebuilt UI for a custom experience: [Custom Prebuilt UI](https://docs.zegocloud.com/article/14879)
-- 
 
 - To finest-grained build a call, you may try antoher one: [Live Streaming SDK](https://docs.zegocloud.com/article/14317)
 
