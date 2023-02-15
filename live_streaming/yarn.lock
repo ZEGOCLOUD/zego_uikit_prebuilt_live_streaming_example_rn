@@ -1510,20 +1510,20 @@
   dependencies:
     eslint-visitor-keys "^1.1.0"
 
-"@zegocloud/zego-uikit-prebuilt-live-streaming-rn@1.3.0":
-  version "1.3.0"
-  resolved "https://registry.yarnpkg.com/@zegocloud/zego-uikit-prebuilt-live-streaming-rn/-/zego-uikit-prebuilt-live-streaming-rn-1.3.0.tgz#dda7f6b5a9c1b637c177317c33323a03b700776f"
-  integrity sha512-SfXrfYaotf3Bz8Il/URsv3eWDn8FI+kH5Xd8XQSTGNJnq5YhBOCA27sJK5b6HzG7Qiq9zu2lT33RRaVr1/Thug==
+"@zegocloud/zego-uikit-prebuilt-live-streaming-rn@^1.3.1":
+  version "1.3.1"
+  resolved "https://registry.yarnpkg.com/@zegocloud/zego-uikit-prebuilt-live-streaming-rn/-/zego-uikit-prebuilt-live-streaming-rn-1.3.1.tgz#adf1a7dfc9c4672bbc13d0527cc41681c4150690"
+  integrity sha512-d4glAnX5jzDz7v37taZL6JySBNfBasKFC8DkhHpcITYLPYpqc2MXPXQbi3NSVNjRvyAV+eVy/W6EyWb2/g0lAg==
 
-"@zegocloud/zego-uikit-rn@1.12.0":
-  version "1.12.0"
-  resolved "https://registry.yarnpkg.com/@zegocloud/zego-uikit-rn/-/zego-uikit-rn-1.12.0.tgz#522763079d3608f101442f6fd20fbdde469d32ce"
-  integrity sha512-tXDMHfXfz5rbmYLhw8twh1WWiSzcH3dNlxVrPaXiDqf5FGGgmOWwsuCDlegWAr38TpEcz55M/FwZW38MkpQ6Fg==
+"@zegocloud/zego-uikit-rn@^1.12.1":
+  version "1.12.1"
+  resolved "https://registry.yarnpkg.com/@zegocloud/zego-uikit-rn/-/zego-uikit-rn-1.12.1.tgz#e305fcfc17188aff914b0400a7588e1ffa4ae8b4"
+  integrity sha512-FP0Tu8lv9/xQwn1vsdQ4XHNDH78vhY2HhxHC89/1m8DKa/iCEuRqnAaCjzIAkkSYDjS4eObEEmQ9yVqgBNOipg==
 
-"@zegocloud/zego-uikit-signaling-plugin-rn@1.2.7":
-  version "1.2.7"
-  resolved "https://registry.yarnpkg.com/@zegocloud/zego-uikit-signaling-plugin-rn/-/zego-uikit-signaling-plugin-rn-1.2.7.tgz#f6667f2f79eda02f2c2362d2a2c286325db157a9"
-  integrity sha512-aqaWMK8tAg6V4vT9CSGEhwseRHuvonFJZv2W68YwrC6lpu86jDaWpFyd/FNcQTjrlcIWQ1cjWrGhMIuUgNVtIw==
+"@zegocloud/zego-uikit-signaling-plugin-rn@^1.2.8":
+  version "1.2.8"
+  resolved "https://registry.yarnpkg.com/@zegocloud/zego-uikit-signaling-plugin-rn/-/zego-uikit-signaling-plugin-rn-1.2.8.tgz#13979f3a2793e31e010e8eb7d651d13b0c850afa"
+  integrity sha512-f25pf7cjS8xKstge3TAd3KiNi9X40yzyqT6GS4VuEEGtCG3LE4rJLF4seV+OsoJ9ZD9vg2pz6mwKCnnE/IVGEg==
 
 abab@^2.0.3, abab@^2.0.5:
   version "2.0.6"
