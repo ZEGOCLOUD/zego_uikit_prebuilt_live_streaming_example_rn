@@ -6,6 +6,7 @@ import ZegoUIKitPrebuiltLiveStreaming, {
   AUDIENCE_DEFAULT_CONFIG,
 } from '@zegocloud/zego-uikit-prebuilt-live-streaming-rn';
 import ZegoUIKitSignalingPlugin from '@zegocloud/zego-uikit-signaling-plugin-rn';
+import KeyCenter from "../KeyCenter";
 
 export default function AudiencePage(props) {
   const { route } = props;
@@ -15,8 +16,8 @@ export default function AudiencePage(props) {
   return (
     <View style={styles.container}>
       <ZegoUIKitPrebuiltLiveStreaming
-        appID={yourAppID}
-        appSign={yourAppSign}
+        appID={KeyCenter.appID}
+        appSign={KeyCenter.appSign}
         userID={userID}
         userName={userName}
         liveID={liveID}
