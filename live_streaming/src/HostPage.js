@@ -1,7 +1,7 @@
 import React from 'react';
 import { StyleSheet, View } from 'react-native';
 import ZegoUIKitPrebuiltLiveStreaming, { HOST_DEFAULT_CONFIG } from '@zegocloud/zego-uikit-prebuilt-live-streaming-rn'
-import ZegoUIKitSignalingPlugin from '@zegocloud/zego-uikit-signaling-plugin-rn';
+import * as ZIM from 'zego-zim-react-native';
 import KeyCenter from "../KeyCenter";
 
 export default function HostPage(props) {
@@ -22,7 +22,7 @@ export default function HostPage(props) {
                     ...HOST_DEFAULT_CONFIG,
                     onLeaveLiveStreaming: () => { props.navigation.navigate('HomePage') },
                 }}
-                plugins={[ZegoUIKitSignalingPlugin]}
+                plugins={[ZIM]}
             />
         </View>
     );
