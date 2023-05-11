@@ -1510,10 +1510,10 @@
   dependencies:
     eslint-visitor-keys "^1.1.0"
 
-"@zegocloud/zego-uikit-prebuilt-live-streaming-rn@^2.0.0":
-  version "2.0.0"
-  resolved "https://registry.yarnpkg.com/@zegocloud/zego-uikit-prebuilt-live-streaming-rn/-/zego-uikit-prebuilt-live-streaming-rn-2.0.0.tgz#e988c496817b47b6d094455f26fa5b18b711ece8"
-  integrity sha512-ir3OPgLLJzJiGLrtvWggvrQgP8SkiyMniCbmfF66zf+rdjRE5HUp+1y82F/cmpm+6HkbaUDFselWuhoJOfPnVg==
+"@zegocloud/zego-uikit-prebuilt-live-streaming-rn@^2.0.1":
+  version "2.0.1"
+  resolved "https://registry.yarnpkg.com/@zegocloud/zego-uikit-prebuilt-live-streaming-rn/-/zego-uikit-prebuilt-live-streaming-rn-2.0.1.tgz#9b6eb9674294f19cc0c747b44f0a460e32dd1256"
+  integrity sha512-O9SldVmSiwzRhbPjQvjuZMlrpTsIeWlViDFz7apKdkghmR6utUdvMuNS2TmOkp2vj/O0JZmyH1dNc4YfnLAYjQ==
 
 "@zegocloud/zego-uikit-rn@^2.0.0":
   version "2.0.0"

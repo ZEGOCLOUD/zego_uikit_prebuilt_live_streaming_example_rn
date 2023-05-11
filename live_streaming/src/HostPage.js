@@ -1,10 +1,11 @@
-import React from 'react';
+import React, { useRef } from 'react';
 import { StyleSheet, View } from 'react-native';
 import ZegoUIKitPrebuiltLiveStreaming, { HOST_DEFAULT_CONFIG } from '@zegocloud/zego-uikit-prebuilt-live-streaming-rn'
 import * as ZIM from 'zego-zim-react-native';
 import KeyCenter from "../KeyCenter";
 
 export default function HostPage(props) {
+    const prebuiltRef = useRef();
     const { route } = props;
     const { params } = route;
     const { userID, userName, liveID } = params;
@@ -12,6 +13,7 @@ export default function HostPage(props) {
     return (
         <View style={styles.container}>
             <ZegoUIKitPrebuiltLiveStreaming
+                ref={prebuiltRef}
                 appID={KeyCenter.appID}
                 appSign={KeyCenter.appSign}
                 userID={userID}
@@ -20,7 +22,23 @@ export default function HostPage(props) {
 
                 config={{
                     ...HOST_DEFAULT_CONFIG,
-                    onLeaveLiveStreaming: () => { props.navigation.navigate('HomePage') },
+                    onStartLiveButtonPressed: () => { console.log('########HostPage onStartLiveButtonPressed'); },
+                    onLiveStreamingEnded: () => {
+                        console.log('########HostPage onLiveStreamingEnded');
+                    },
+                    onLeaveLiveStreaming: () => {
+                        console.log('########HostPage onLeaveLiveStreaming');
+                        props.navigation.navigate('HomePage');
+                    },
+                    durationConfig: {
+                        isVisible: true,
+                        onDurationUpdate: (duration) => {
+                            console.log('########HostPage onDurationUpdate', duration);
+                            if (duration === 10) {
+                                prebuiltRef.current.leave();
+                            }
+                        }
+                    }
                 }}
                 plugins={[ZIM]}
             />
