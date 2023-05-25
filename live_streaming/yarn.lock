@@ -1510,15 +1510,15 @@
   dependencies:
     eslint-visitor-keys "^1.1.0"
 
-"@zegocloud/zego-uikit-prebuilt-live-streaming-rn@^2.0.1":
-  version "2.0.1"
-  resolved "https://registry.yarnpkg.com/@zegocloud/zego-uikit-prebuilt-live-streaming-rn/-/zego-uikit-prebuilt-live-streaming-rn-2.0.1.tgz#9b6eb9674294f19cc0c747b44f0a460e32dd1256"
-  integrity sha512-O9SldVmSiwzRhbPjQvjuZMlrpTsIeWlViDFz7apKdkghmR6utUdvMuNS2TmOkp2vj/O0JZmyH1dNc4YfnLAYjQ==
+"@zegocloud/zego-uikit-prebuilt-live-streaming-rn@^2.1.0":
+  version "2.1.0"
+  resolved "https://registry.yarnpkg.com/@zegocloud/zego-uikit-prebuilt-live-streaming-rn/-/zego-uikit-prebuilt-live-streaming-rn-2.1.0.tgz#a8bb6d4974f91147d04e1e8c69fb37717de3c8d1"
+  integrity sha512-zElB2LfiXx4TOwU7aY5z3azC4cCh25/ssGFS4ph2kmORinS7eIShPOiM02mGzosLCJWKfDXtc6x/7W4SvMFKtw==
 
-"@zegocloud/zego-uikit-rn@^2.0.0":
-  version "2.0.0"
-  resolved "https://registry.yarnpkg.com/@zegocloud/zego-uikit-rn/-/zego-uikit-rn-2.0.0.tgz#13a8cc37f52a405ccb78dbd1453665980eb6c693"
-  integrity sha512-6DCMMP931KpIun1ugvG6pUTKzwNueR2jzZFi6xGF7oJvISUkNoRlHZOTSrxA+3uA+BvSZhJucpr+nLleQ2u91w==
+"@zegocloud/zego-uikit-rn@^2.0.2":
+  version "2.0.2"
+  resolved "https://registry.yarnpkg.com/@zegocloud/zego-uikit-rn/-/zego-uikit-rn-2.0.2.tgz#64723c19f41e1df232499bbcad43cd048611ae14"
+  integrity sha512-6fteLrwGou2vAdmg/uJN6QDbogOrE7T2bqM6dy339YLhhBmb0zQXgWGsbIAhGs/QyWdP9/QRy6E0gY3Nom9rJw==
 
 abab@^2.0.3, abab@^2.0.5:
   version "2.0.6"

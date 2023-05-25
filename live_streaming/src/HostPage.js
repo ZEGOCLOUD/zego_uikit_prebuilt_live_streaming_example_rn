@@ -1,6 +1,9 @@
 import React, { useRef } from 'react';
 import { StyleSheet, View } from 'react-native';
-import ZegoUIKitPrebuiltLiveStreaming, { HOST_DEFAULT_CONFIG } from '@zegocloud/zego-uikit-prebuilt-live-streaming-rn'
+import ZegoUIKitPrebuiltLiveStreaming, {
+    HOST_DEFAULT_CONFIG,
+    ZegoMenuBarButtonName,
+} from '@zegocloud/zego-uikit-prebuilt-live-streaming-rn'
 import * as ZIM from 'zego-zim-react-native';
 import KeyCenter from "../KeyCenter";
 
@@ -34,10 +37,25 @@ export default function HostPage(props) {
                         isVisible: true,
                         onDurationUpdate: (duration) => {
                             console.log('########HostPage onDurationUpdate', duration);
-                            if (duration === 10) {
+                            if (duration === 10 * 60) {
                                 prebuiltRef.current.leave();
                             }
                         }
+                    },
+                    topMenuBarConfig: {
+                        buttons: [ZegoMenuBarButtonName.minimizingButton, ZegoMenuBarButtonName.leaveButton],
+                    },
+                    onWindowMinimized: () => {
+                        console.log('[Demo]HostPage onWindowMinimized');
+                        props.navigation.navigate('HomePage');
+                    },
+                    onWindowMaximized: () => {
+                        console.log('[Demo]HostPage onWindowMaximized');
+                        props.navigation.navigate('HostPage', {
+                          userID: userID,
+                          userName: userName,
+                          liveID: liveID,
+                        });
                     }
                 }}
                 plugins={[ZIM]}

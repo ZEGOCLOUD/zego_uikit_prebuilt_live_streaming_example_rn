@@ -4,6 +4,7 @@ import { Alert } from 'react-native';
 import { StyleSheet, View, Text, Button } from 'react-native';
 import ZegoUIKitPrebuiltLiveStreaming, {
   AUDIENCE_DEFAULT_CONFIG,
+  ZegoMenuBarButtonName,
 } from '@zegocloud/zego-uikit-prebuilt-live-streaming-rn';
 import * as ZIM from 'zego-zim-react-native';
 import KeyCenter from "../KeyCenter";
@@ -26,6 +27,21 @@ export default function AudiencePage(props) {
           onLeaveLiveStreaming: () => {
             props.navigation.navigate('HomePage');
           },
+          topMenuBarConfig: {
+            buttons: [ZegoMenuBarButtonName.minimizingButton, ZegoMenuBarButtonName.leaveButton],
+          },
+          onWindowMinimized: () => {
+            console.log('[Demo]AudiencePage onWindowMinimized');
+            props.navigation.navigate('HomePage');
+          },
+          onWindowMaximized: () => {
+              console.log('[Demo]AudiencePage onWindowMaximized');
+              props.navigation.navigate('AudiencePage', {
+                userID: userID,
+                userName: userName,
+                liveID: liveID,
+              });
+          }
         }}
         plugins={[ZIM]}
       />
