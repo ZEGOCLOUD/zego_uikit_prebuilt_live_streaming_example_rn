@@ -291,12 +291,9 @@ PODS:
   - react-native-zego-express-engine (3.2.0):
     - React
     - ZegoExpressEngine (= 3.2.0)
-  - react-native-zego-zim (2.7.1):
+  - react-native-zego-zim (2.12.1):
     - React
-    - ZIM (= 2.7.1)
-  - react-native-zego-zpns (2.3.3):
-    - React
-    - ZPNs (= 2.1.0)
+    - ZIM (= 2.12.1)
   - React-perflogger (0.68.5)
   - React-RCTActionSheet (0.68.5):
     - React-Core/RCTActionSheetHeaders (= 0.68.5)
@@ -365,15 +362,18 @@ PODS:
   - RNScreens (3.17.0):
     - React-Core
     - React-RCTImage
-  - SocketRocket (0.6.0)
+  - SocketRocket (0.6.1)
   - Yoga (1.14.0)
   - YogaKit (1.18.1):
     - Yoga (~> 1.14)
+  - zego-uikit-prebuilt-live-streaming-rn (2.1.2):
+    - React-Core
+  - zego-uikit-rn (2.5.1):
+    - React-Core
   - ZegoExpressEngine (3.2.0):
     - ZegoExpressEngine/Video (= 3.2.0)
   - ZegoExpressEngine/Video (3.2.0)
-  - ZIM (2.7.1)
-  - ZPNs (2.1.0)
+  - ZIM (2.12.1)
 
 DEPENDENCIES:
   - boost (from `../node_modules/react-native/third-party-podspecs/boost.podspec`)
@@ -421,7 +421,6 @@ DEPENDENCIES:
   - react-native-safe-area-context (from `../node_modules/react-native-safe-area-context`)
   - react-native-zego-express-engine (from `../node_modules/zego-express-engine-reactnative`)
   - react-native-zego-zim (from `../node_modules/zego-zim-react-native`)
-  - react-native-zego-zpns (from `../node_modules/zego-zpns-react-native`)
   - React-perflogger (from `../node_modules/react-native/ReactCommon/reactperflogger`)
   - React-RCTActionSheet (from `../node_modules/react-native/Libraries/ActionSheetIOS`)
   - React-RCTAnimation (from `../node_modules/react-native/Libraries/NativeAnimation`)
@@ -436,6 +435,8 @@ DEPENDENCIES:
   - ReactCommon/turbomodule/core (from `../node_modules/react-native/ReactCommon`)
   - RNScreens (from `../node_modules/react-native-screens`)
   - Yoga (from `../node_modules/react-native/ReactCommon/yoga`)
+  - "zego-uikit-prebuilt-live-streaming-rn (from `../node_modules/@zegocloud/zego-uikit-prebuilt-live-streaming-rn`)"
+  - "zego-uikit-rn (from `../node_modules/@zegocloud/zego-uikit-rn`)"
 
 SPEC REPOS:
   trunk:
@@ -456,7 +457,6 @@ SPEC REPOS:
     - YogaKit
     - ZegoExpressEngine
     - ZIM
-    - ZPNs
 
 EXTERNAL SOURCES:
   boost:
@@ -501,8 +501,6 @@ EXTERNAL SOURCES:
     :path: "../node_modules/zego-express-engine-reactnative"
   react-native-zego-zim:
     :path: "../node_modules/zego-zim-react-native"
-  react-native-zego-zpns:
-    :path: "../node_modules/zego-zpns-react-native"
   React-perflogger:
     :path: "../node_modules/react-native/ReactCommon/reactperflogger"
   React-RCTActionSheet:
@@ -531,6 +529,10 @@ EXTERNAL SOURCES:
     :path: "../node_modules/react-native-screens"
   Yoga:
     :path: "../node_modules/react-native/ReactCommon/yoga"
+  zego-uikit-prebuilt-live-streaming-rn:
+    :path: "../node_modules/@zegocloud/zego-uikit-prebuilt-live-streaming-rn"
+  zego-uikit-rn:
+    :path: "../node_modules/@zegocloud/zego-uikit-rn"
 
 SPEC CHECKSUMS:
   boost: a7c83b31436843459a1961bfd74b96033dc77234
@@ -566,8 +568,7 @@ SPEC CHECKSUMS:
   React-logger: 98f663b292a60967ebbc6d803ae96c1381183b6d
   react-native-safe-area-context: 39c2d8be3328df5d437ac1700f4f3a4f75716acc
   react-native-zego-express-engine: 47e48e9e647bc973827a04f0c09723a9f3421feb
-  react-native-zego-zim: b35ee3f60bbe3961538fdaf4e7b8601b05bf6ff4
-  react-native-zego-zpns: fc293b46e455d6f051eb381f90c9ba6f1a2aeed1
+  react-native-zego-zim: 8ccf8bca633b2a947b1407c9f2a76767c1667154
   React-perflogger: 0458a87ea9a7342079e7a31b0d32b3734fb8415f
   React-RCTActionSheet: 22538001ea2926dea001111dd2846c13a0730bc9
   React-RCTAnimation: 732ce66878d4aa151d56a0d142b1105aa12fd313
@@ -581,13 +582,14 @@ SPEC CHECKSUMS:
   React-runtimeexecutor: b1f1995089b90696dbc2a7ffe0059a80db5c8eb1
   ReactCommon: 149e2c0acab9bac61378da0db5b2880a1b5ff59b
   RNScreens: 0df01424e9e0ed7827200d6ed1087ddd06c493f9
-  SocketRocket: fccef3f9c5cedea1353a9ef6ada904fde10d6608
+  SocketRocket: f32cd54efbe0f095c4d7594881e52619cfe80b17
   Yoga: c4d61225a466f250c35c1ee78d2d0b3d41fe661c
   YogaKit: f782866e155069a2cca2517aafea43200b01fd5a
+  zego-uikit-prebuilt-live-streaming-rn: 063ee0ac955af29d5837e456a2da056bd658a7ba
+  zego-uikit-rn: f37cea69faa3391075ff173bb11076c7c4d74bfa
   ZegoExpressEngine: 7ddbd7134c03c45bfdcddb61f4d76a1486518425
-  ZIM: 70617c39c931038adc87bbe1f4aee3c80bbc997d
-  ZPNs: 7e3b073a97f3a7d9bbf77d76c94c4f592ab9aa2c
+  ZIM: 57ce22334b15f918ec13ce88e9632d3ebe36d5ba
 
 PODFILE CHECKSUM: c49c12ef21ead37996a81ba5af1e318831481eb2
 
-COCOAPODS: 1.11.3
+COCOAPODS: 1.14.2
