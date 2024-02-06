@@ -5,7 +5,7 @@ import ZegoUIKitPrebuiltLiveStreaming, {
     ZegoMenuBarButtonName,
 } from '@zegocloud/zego-uikit-prebuilt-live-streaming-rn'
 import * as ZIM from 'zego-zim-react-native';
-import KeyCenter from "../KeyCenter";
+import KeyCenter from "./KeyCenter";
 
 export default function HostPage(props) {
     const prebuiltRef = useRef();
