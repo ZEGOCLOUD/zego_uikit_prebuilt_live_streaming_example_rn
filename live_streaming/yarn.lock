@@ -2076,10 +2076,10 @@
   resolved "https://registry.yarnpkg.com/@ungap/structured-clone/-/structured-clone-1.2.0.tgz#756641adb587851b5ccb3e095daf27ae581c8406"
   integrity sha512-zuVdFrMJiuCDQUMCzQaD6KL28MjnqqN8XnAqiEq9PNm/hCPTSGfrXCOfwj1ow4LFb/tNymJPwsNbVePc1xFqrQ==
 
-"@zegocloud/zego-uikit-prebuilt-live-streaming-rn@2.1.2":
-  version "2.1.2"
-  resolved "https://registry.yarnpkg.com/@zegocloud/zego-uikit-prebuilt-live-streaming-rn/-/zego-uikit-prebuilt-live-streaming-rn-2.1.2.tgz#0374ca40501063d764a48e613caa0fdfd9f1c093"
-  integrity sha512-gKagSJXGKayS9KRiFG9WvDOxHUjFuJrnG2Liq8RQL+d6OapfFszXNSARWq0FSGOhzMMoqzWMNWjmFLm/pMyAfQ==
+"@zegocloud/zego-uikit-prebuilt-live-streaming-rn@2.2.1":
+  version "2.2.1"
+  resolved "https://registry.yarnpkg.com/@zegocloud/zego-uikit-prebuilt-live-streaming-rn/-/zego-uikit-prebuilt-live-streaming-rn-2.2.1.tgz#b1063d0a9e4dcb63fb92b82c4790a43dffad88c2"
+  integrity sha512-dSdkyaEdvN/Jaimx5Ic2FQhA8wqpo+VS3W9NPuEp5AnUg1gL4mrJr/ZJ+jOurL4JgQlWUTqTIKzAfb9yJ2fN+A==
 
 "@zegocloud/zego-uikit-rn@2.6.0":
   version "2.6.0"
