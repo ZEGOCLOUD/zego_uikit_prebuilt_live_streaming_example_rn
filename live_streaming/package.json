@@ -12,8 +12,8 @@
   "dependencies": {
     "@react-navigation/native": "^6.0.11",
     "@react-navigation/native-stack": "^6.7.0",
-    "@zegocloud/zego-uikit-prebuilt-live-streaming-rn": "^2.4.3",
-    "@zegocloud/zego-uikit-rn": "^2.14.3",
+    "@zegocloud/zego-uikit-prebuilt-live-streaming-rn": "^2.4.4",
+    "@zegocloud/zego-uikit-rn": "^2.14.4",
     "react": "18.2.0",
     "react-delegate-component": "*",
     "react-native": "0.72.3",
