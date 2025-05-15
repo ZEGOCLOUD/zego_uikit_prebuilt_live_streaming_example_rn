@@ -33,18 +33,18 @@
     "react-test-renderer": "18.3.1",
     "typescript": "5.0.4",
 
-    "@zegocloud/zego-uikit-rn": "^2.17.1",
-    "@zegocloud/zego-uikit-prebuilt-live-streaming-rn": "^2.5.3",
-    "zego-express-engine-reactnative": "^3.17.2",
-    "zego-zim-react-native": "2.19.0",
+    "@zegocloud/zego-uikit-rn": "2.17.9",
+    "@zegocloud/zego-uikit-prebuilt-live-streaming-rn": "2.5.5",
+    "zego-express-engine-reactnative": "^3.20.2",
+    "zego-zim-react-native": "^2.20.0",
 
-    "@react-navigation/native": "^6.0.0",
-    "@react-navigation/native-stack": "^6.11.0",
-    "react-native-safe-area-context": "^4.7.1",
-    "react-native-screens": "^3.22.1",
+    "@react-navigation/native": "^7.1.9",
+    "@react-navigation/native-stack": "^7.3.13",
+    "react-native-safe-area-context": "^5.4.0",
+    "react-native-screens": "^4.10.0",
 
     "react-delegate-component": "^1.0.0",
-    "react-native-device-info": "^11.1.0",
+    "react-native-device-info": "^14.0.4",
     "react-native-orientation-locker": "^1.7.0"
   },
   "engines": {

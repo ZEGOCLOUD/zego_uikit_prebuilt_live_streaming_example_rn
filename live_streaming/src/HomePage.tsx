@@ -1,23 +1,36 @@
 import React, { useEffect, useState } from "react";
 import { Button, View, StyleSheet, Text, TextInput } from 'react-native'
 import { useNavigation } from '@react-navigation/native';
-import { useSafeAreaInsets } from "react-native-safe-area-context";
 
-export default function HomePage(props) {
+import { useSafeAreaInsets } from "react-native-safe-area-context";
+import { getFirstInstallTime, getStartupTime } from 'react-native-device-info'
+
+export default function HomePage() {
     const navigation = useNavigation();
-    const onJoinPress = (isHost) => {
+    const onJoinPress = (isHost: boolean) => {
+        // @ts-ignore
         navigation.navigate(isHost ? 'HostPage' : 'AudiencePage', {
             userID: userID,
-            userName: userID,
+            userName: `user_${userID}`,
             liveID: liveID,
         })
     }
     const [userID, setUserID] = useState('');
     const [liveID, setLiveID] = useState('');
+
     useEffect(() => {
-        setUserID(String(Math.floor(Math.random() * 100000)));
-        setLiveID(String(Math.floor(Math.random() * 10000)));
-    }, [])
+        getFirstInstallTime().then(firstInstallTime => {
+            console.log('firstInstallTime: ', firstInstallTime)
+            const id = String(firstInstallTime).slice(-5);
+            setUserID(id);
+        });
+        getStartupTime().then(firstStartupTime => {
+            console.log('firstStartupTime: ', firstStartupTime)
+            const id = String(firstStartupTime).slice(-7, -3);
+            setLiveID(id);
+        });
+    }, []);
+
     const insets = useSafeAreaInsets();
     return (
         <View style={[styles.container, { paddingTop: insets.top, paddingBottom: insets.bottom }]}>
@@ -32,8 +45,10 @@ export default function HomePage(props) {
             >
             </TextInput>
             <View style={[styles.buttonLine, styles.leftPadding]}>
+                {/* @ts-ignore */}
                 <Button disabled={liveID.length == 0} style={styles.button} title="Start a live" onPress={() => { onJoinPress(true) }} />
                 <View style={styles.buttonSpacing} />
+                {/* @ts-ignore */}
                 <Button  disabled={liveID.length == 0} style={styles.button} title="Watch a live" onPress={() => { onJoinPress(false) }} />
             </View>
             {/* <View style={styles.buttonLine}>
