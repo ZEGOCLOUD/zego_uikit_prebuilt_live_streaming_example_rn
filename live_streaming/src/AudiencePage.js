@@ -1,12 +1,15 @@
-import React, { useEffect } from 'react';
-import { Alert } from 'react-native';
+import React from 'react';
+import { StyleSheet, View } from 'react-native';
 
-import { StyleSheet, View, Text, Button } from 'react-native';
+import * as ZIM from 'zego-zim-react-native';
+import {
+  ZegoAudioVideoResourceMode,
+} from '@zegocloud/zego-uikit-rn';
 import ZegoUIKitPrebuiltLiveStreaming, {
   AUDIENCE_DEFAULT_CONFIG,
   ZegoMenuBarButtonName,
 } from '@zegocloud/zego-uikit-prebuilt-live-streaming-rn';
-import * as ZIM from 'zego-zim-react-native';
+
 import KeyCenter from "./KeyCenter";
 
 export default function AudiencePage(props) {
@@ -41,7 +44,9 @@ export default function AudiencePage(props) {
                 userName: userName,
                 liveID: liveID,
               });
-          }
+          },
+          showNoHostOnlineTipAfterSeconds: 3,
+          audienceAudioVideoResourceMode: ZegoAudioVideoResourceMode.Default
         }}
         plugins={[ZIM]}
       />
