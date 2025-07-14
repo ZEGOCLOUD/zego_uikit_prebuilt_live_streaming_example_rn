@@ -1,5 +1,8 @@
 import React, { useRef } from 'react';
 import { StyleSheet, View } from 'react-native';
+import {
+    ZegoUIKitVideoConfig,
+} from '@zegocloud/zego-uikit-rn';
 import ZegoUIKitPrebuiltLiveStreaming, {
     HOST_DEFAULT_CONFIG,
     ZegoMenuBarButtonName,
@@ -56,7 +59,8 @@ export default function HostPage(props) {
                           userName: userName,
                           liveID: liveID,
                         });
-                    }
+                    },
+                    video: ZegoUIKitVideoConfig.preset720P(),
                 }}
                 plugins={[ZIM]}
             />

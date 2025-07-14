@@ -4,6 +4,7 @@ import { StyleSheet, View } from 'react-native';
 import * as ZIM from 'zego-zim-react-native';
 import {
   ZegoAudioVideoResourceMode,
+  ZegoUIKitVideoConfig,
 } from '@zegocloud/zego-uikit-rn';
 import ZegoUIKitPrebuiltLiveStreaming, {
   AUDIENCE_DEFAULT_CONFIG,
@@ -46,7 +47,8 @@ export default function AudiencePage(props) {
               });
           },
           showNoHostOnlineTipAfterSeconds: 3,
-          audienceAudioVideoResourceMode: ZegoAudioVideoResourceMode.Default
+          audienceAudioVideoResourceMode: ZegoAudioVideoResourceMode.Default,
+          video: ZegoUIKitVideoConfig.preset720P(),
         }}
         plugins={[ZIM]}
       />
