@@ -32,9 +32,14 @@ export default function HostPage(props) {
                     onLiveStreamingEnded: () => {
                         console.log('########HostPage onLiveStreamingEnded');
                     },
-                    onLeaveLiveStreaming: () => {
-                        console.log('########HostPage onLeaveLiveStreaming');
-                        props.navigation.navigate('HomePage');
+                    onLeaveLiveStreaming: (duration) => {
+                        console.log('########HostPage onLeaveLiveStreaming', duration);
+                        if (typeof props.navigation.popTo === 'function') {
+                            props.navigation.popTo('HomePage');
+                        } else {
+                            // Compatible with React Navigation 6
+                            props.navigation.navigate('HomePage');
+                        }
                     },
                     durationConfig: {
                         isVisible: true,
@@ -50,7 +55,12 @@ export default function HostPage(props) {
                     },
                     onWindowMinimized: () => {
                         console.log('[Demo]HostPage onWindowMinimized');
-                        props.navigation.navigate('HomePage');
+                        if (typeof props.navigation.popTo === 'function') {
+                            props.navigation.popTo('HomePage');
+                        } else {
+                            // Compatible with React Navigation 6
+                            props.navigation.navigate('HomePage');
+                        }
                     },
                     onWindowMaximized: () => {
                         console.log('[Demo]HostPage onWindowMaximized');

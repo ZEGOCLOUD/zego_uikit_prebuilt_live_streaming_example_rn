@@ -28,15 +28,26 @@ export default function AudiencePage(props) {
         liveID={liveID}
         config={{
           ...AUDIENCE_DEFAULT_CONFIG,
-          onLeaveLiveStreaming: () => {
-            props.navigation.navigate('HomePage');
+          onLeaveLiveStreaming: (duration) => {
+            console.log('########AudiencePage onLeaveLiveStreaming', duration);
+            if (typeof props.navigation.popTo === 'function') {
+              props.navigation.popTo('HomePage');
+            } else {
+              // Compatible with React Navigation 6
+              props.navigation.navigate('HomePage');
+            }
           },
           topMenuBarConfig: {
             buttons: [ZegoMenuBarButtonName.minimizingButton, ZegoMenuBarButtonName.leaveButton],
           },
           onWindowMinimized: () => {
             console.log('[Demo]AudiencePage onWindowMinimized');
-            props.navigation.navigate('HomePage');
+            if (typeof props.navigation.popTo === 'function') {
+              props.navigation.popTo('HomePage');
+            } else {
+              // Compatible with React Navigation 6
+              props.navigation.navigate('HomePage');
+            }
           },
           onWindowMaximized: () => {
               console.log('[Demo]AudiencePage onWindowMaximized');
