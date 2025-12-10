@@ -1,5 +1,8 @@
 import React, { useRef } from 'react';
 import { StyleSheet, View } from 'react-native';
+
+import * as ZIM from 'zego-zim-react-native';
+
 import {
     ZegoUIKitVideoConfig,
 } from '@zegocloud/zego-uikit-rn';
@@ -7,7 +10,8 @@ import ZegoUIKitPrebuiltLiveStreaming, {
     HOST_DEFAULT_CONFIG,
     ZegoMenuBarButtonName,
 } from '@zegocloud/zego-uikit-prebuilt-live-streaming-rn'
-import * as ZIM from 'zego-zim-react-native';
+
+import { CustomBuilder } from './CustomBuilder';
 import KeyCenter from "./KeyCenter";
 
 export default function HostPage(props) {
@@ -71,6 +75,20 @@ export default function HostPage(props) {
                         });
                     },
                     video: ZegoUIKitVideoConfig.preset720P(),
+                    roomConfig: {
+                        onUsersEnter: (userInfoList) => {
+                            console.log('########AudiencePage onUsersEnter', userInfoList);
+                            userInfoList.map((userInfo) => {
+                                (prebuiltRef.current)?.sendSystemMessage?.(userInfo.userName + ' entered the room');
+                            })
+                        },
+                        onUsersLeave: (userInfoList) => {
+                            console.log('########AudiencePage onUsersLeave', userInfoList);
+                        },
+                    },
+                    inRoomMessageViewConfig: {
+                        itemBuilder: CustomBuilder.inRoomMessageItemBuilder,
+                    },
                 }}
                 plugins={[ZIM]}
             />

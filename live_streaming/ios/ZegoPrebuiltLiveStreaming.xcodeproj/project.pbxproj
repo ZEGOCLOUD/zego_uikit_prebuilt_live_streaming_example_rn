@@ -24,7 +24,6 @@
 		81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = LaunchScreen.storyboard; path = ZegoPrebuiltLiveStreaming/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		C919FCE222E4FB76B2C82C46 /* PrivacyInfo.xcprivacy */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xml; name = PrivacyInfo.xcprivacy; path = ZegoPrebuiltLiveStreaming/PrivacyInfo.xcprivacy; sourceTree = "<group>"; };
 		E9A65CD1AC7FFEA046F03D6F /* libPods-ZegoPrebuiltLiveStreaming.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-ZegoPrebuiltLiveStreaming.a"; sourceTree = BUILT_PRODUCTS_DIR; };
-		EB7BEBFF296BD9DA00ADA589 /* bundle */ = {isa = PBXFileReference; lastKnownFileType = folder; path = bundle; sourceTree = "<group>"; };
 		ED297162215061F000B7C4FE /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = System/Library/Frameworks/JavaScriptCore.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
@@ -71,7 +70,6 @@
 		83CBB9F61A601CBA00E9B192 = {
 			isa = PBXGroup;
 			children = (
-				EB7BEBFF296BD9DA00ADA589 /* bundle */,
 				13B07FAE1A68108700A75B9A /* ZegoPrebuiltLiveStreaming */,
 				832341AE1AAA6A7D00B99B32 /* Libraries */,
 				83CBBA001A601CBA00E9B192 /* Products */,
@@ -269,6 +267,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
+				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = PN83KX5U85;
 				ENABLE_BITCODE = NO;
 				INFOPLIST_FILE = ZegoPrebuiltLiveStreaming/Info.plist;
@@ -278,6 +277,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
+				MARKETING_VERSION = 2.8.0;
 				OTHER_LDFLAGS = (
 					"$(inherited)",
 					"-ObjC",
@@ -297,6 +297,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
+				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = PN83KX5U85;
 				INFOPLIST_FILE = ZegoPrebuiltLiveStreaming/Info.plist;
 				INFOPLIST_KEY_CFBundleDisplayName = ZegoPrebuiltLiveStreamingDemo;
@@ -305,6 +306,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
+				MARKETING_VERSION = 2.8.0;
 				OTHER_LDFLAGS = (
 					"$(inherited)",
 					"-ObjC",

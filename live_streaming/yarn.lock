@@ -2014,12 +2014,12 @@
   resolved "https://registry.npmmirror.com/@vscode/sudo-prompt/-/sudo-prompt-9.3.1.tgz#c562334bc6647733649fd42afc96c0eea8de3b65"
   integrity sha512-9ORTwwS74VaTn38tNbQhsA5U44zkJfcb0BdTSyyG6frP4e8KMtHuTXYmwefe5dpL8XB1aGSIVTaLjD3BbWb5iA==
 
-"@zegocloud/zego-uikit-prebuilt-live-streaming-rn@^2.7.1":
-  version "2.8.0"
-  resolved "https://registry.npmmirror.com/@zegocloud/zego-uikit-prebuilt-live-streaming-rn/-/zego-uikit-prebuilt-live-streaming-rn-2.8.0.tgz#31a2ae1a7d81b670c2b8f8ff841b340454a245c4"
-  integrity sha512-hi7AUCtXvam45CCa19gXvalTqmoE1e6cjju4pO8wWXp/RQ38ZGSwzVUYDqMDHBSGC4ZYFXWQeSdU3+HUirAMeQ==
+"@zegocloud/zego-uikit-prebuilt-live-streaming-rn@^2.8.1":
+  version "2.8.1"
+  resolved "https://registry.yarnpkg.com/@zegocloud/zego-uikit-prebuilt-live-streaming-rn/-/zego-uikit-prebuilt-live-streaming-rn-2.8.1.tgz#f7dd3dfb24bafaad6240ef0cd1710d2a5d27bf17"
+  integrity sha512-gjTfjGy06I66mmjE+et8cR9BWdTg4CYUJJ8Bn1q9q7z+PYa/ekAKbVI0yHSmQKTDuHLEGFX24aLYB4wTjILpkQ==
 
-"@zegocloud/zego-uikit-rn@^2.18.7":
+"@zegocloud/zego-uikit-rn@^2.19.0":
   version "2.19.0"
   resolved "https://registry.npmmirror.com/@zegocloud/zego-uikit-rn/-/zego-uikit-rn-2.19.0.tgz#6ba7f07d5792d01e37cffc40cefed163d6b10857"
   integrity sha512-y5g4EJkZ6pJT/h/IUZzGEJxT48Pn4sQfjripyFEwWQhXAG71zadoZlJheMYeSDie5Ee42UMO/wfGwAK8AZ3mNw==
@@ -5431,7 +5431,7 @@ react-native-safe-area-context@^5.5.2:
   resolved "https://registry.npmmirror.com/react-native-safe-area-context/-/react-native-safe-area-context-5.6.2.tgz#283e006f5b434fb247fcb4be0971ad7473d5c560"
   integrity sha512-4XGqMNj5qjUTYywJqpdWZ9IG8jgkS3h06sfVjfw5yZQZfWnRFXczi0GnYyFyCc2EBps/qFmoCH8fez//WumdVg==
 
-react-native-screens@^4.13.1:
+react-native-screens@^4.15.4:
   version "4.18.0"
   resolved "https://registry.npmmirror.com/react-native-screens/-/react-native-screens-4.18.0.tgz#ba5a951b3f145e3b773d201143c19e1b1c1337ff"
   integrity sha512-mRTLWL7Uc1p/RFNveEIIrhP22oxHduC2ZnLr/2iHwBeYpGXR0rJZ7Bgc0ktxQSHRjWTPT70qc/7yd4r9960PBQ==
@@ -6547,7 +6547,7 @@ yocto-queue@^0.1.0:
   resolved "https://registry.npmmirror.com/yocto-queue/-/yocto-queue-0.1.0.tgz#0294eb3dee05028d31ee1a5fa2c556a6aaf10a1b"
   integrity sha512-rVksvsnNCdJ/ohGc6xgPwyN8eheCxsiLM8mxuE/t/mOVqJewPuO1miLpTHQiRgTKCLexL4MeAFVagts7HmNZ2Q==
 
-zego-express-engine-reactnative@^3.20.2:
+zego-express-engine-reactnative@^3.22.0:
   version "3.22.0"
   resolved "https://registry.npmmirror.com/zego-express-engine-reactnative/-/zego-express-engine-reactnative-3.22.0.tgz#0ddc4630ffa40ffc75784b0065e78afffbad7d7d"
   integrity sha512-7jzfyVuTP/nUBfF4bLaQ80juWsIkBvW57ooBxqMEpmarcZs9hdWTNQszsYJcjWrKdhCU7iVKtuCX3vmbjT6nRQ==

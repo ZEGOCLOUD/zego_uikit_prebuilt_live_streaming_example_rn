@@ -2,6 +2,7 @@ import React from 'react';
 import { StyleSheet, View } from 'react-native';
 
 import * as ZIM from 'zego-zim-react-native';
+
 import {
   ZegoAudioVideoResourceMode,
   ZegoUIKitVideoConfig,
@@ -11,6 +12,7 @@ import ZegoUIKitPrebuiltLiveStreaming, {
   ZegoMenuBarButtonName,
 } from '@zegocloud/zego-uikit-prebuilt-live-streaming-rn';
 
+import { CustomBuilder } from './CustomBuilder';
 import KeyCenter from "./KeyCenter";
 
 export default function AudiencePage(props) {
@@ -60,6 +62,17 @@ export default function AudiencePage(props) {
           showNoHostOnlineTipAfterSeconds: 3,
           audienceAudioVideoResourceMode: ZegoAudioVideoResourceMode.Default,
           video: ZegoUIKitVideoConfig.preset720P(),
+          roomConfig: {
+            onUsersEnter: (userInfoList) => {
+                console.log('########AudiencePage onUsersEnter', userInfoList);
+            },
+            onUsersLeave: (userInfoList) => {
+                console.log('########AudiencePage onUsersLeave', userInfoList);
+            },
+          },
+          inRoomMessageViewConfig: {
+              itemBuilder: CustomBuilder.inRoomMessageItemBuilder,
+          },
         }}
         plugins={[ZIM]}
       />
