@@ -35,7 +35,7 @@
     "typescript": "^5.8.3",
 
     "@zegocloud/zego-uikit-rn": "^2.19.1",
-    "@zegocloud/zego-uikit-prebuilt-live-streaming-rn": "^2.8.1",
+    "@zegocloud/zego-uikit-prebuilt-live-streaming-rn": "^2.9.0",
     "zego-express-engine-reactnative": "^3.22.0",
     "zego-zim-react-native": "^2.20.0",
 

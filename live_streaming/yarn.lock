@@ -2014,15 +2014,15 @@
   resolved "https://registry.npmmirror.com/@vscode/sudo-prompt/-/sudo-prompt-9.3.1.tgz#c562334bc6647733649fd42afc96c0eea8de3b65"
   integrity sha512-9ORTwwS74VaTn38tNbQhsA5U44zkJfcb0BdTSyyG6frP4e8KMtHuTXYmwefe5dpL8XB1aGSIVTaLjD3BbWb5iA==
 
-"@zegocloud/zego-uikit-prebuilt-live-streaming-rn@^2.8.1":
-  version "2.8.1"
-  resolved "https://registry.yarnpkg.com/@zegocloud/zego-uikit-prebuilt-live-streaming-rn/-/zego-uikit-prebuilt-live-streaming-rn-2.8.1.tgz#f7dd3dfb24bafaad6240ef0cd1710d2a5d27bf17"
-  integrity sha512-gjTfjGy06I66mmjE+et8cR9BWdTg4CYUJJ8Bn1q9q7z+PYa/ekAKbVI0yHSmQKTDuHLEGFX24aLYB4wTjILpkQ==
+"@zegocloud/zego-uikit-prebuilt-live-streaming-rn@^2.9.0":
+  version "2.9.0"
+  resolved "https://registry.yarnpkg.com/@zegocloud/zego-uikit-prebuilt-live-streaming-rn/-/zego-uikit-prebuilt-live-streaming-rn-2.9.0.tgz#145a82d7c0580c7a7e0d743aa1f507fdb958e826"
+  integrity sha512-TM9NxEK4oRo64s/BGluKFsp6hKYND6WGH6o4InUFzz0dqPh6GAJCWBoBwn1XHvLatJttuEhTo61Z2Lg1vP7QYQ==
 
-"@zegocloud/zego-uikit-rn@^2.19.0":
-  version "2.19.0"
-  resolved "https://registry.npmmirror.com/@zegocloud/zego-uikit-rn/-/zego-uikit-rn-2.19.0.tgz#6ba7f07d5792d01e37cffc40cefed163d6b10857"
-  integrity sha512-y5g4EJkZ6pJT/h/IUZzGEJxT48Pn4sQfjripyFEwWQhXAG71zadoZlJheMYeSDie5Ee42UMO/wfGwAK8AZ3mNw==
+"@zegocloud/zego-uikit-rn@^2.19.1":
+  version "2.19.1"
+  resolved "https://registry.yarnpkg.com/@zegocloud/zego-uikit-rn/-/zego-uikit-rn-2.19.1.tgz#98ea0de69b5727aec934f350a6e71a945bc4a6ce"
+  integrity sha512-QMI8BEkXB3YQ5edEECBLWu8HdPeOfSeQEnzyhmdBBIQgWRmOwNNcpXCiHoQcRmgKj4W3BHRQh8XucdQ7q6DqMQ==
 
 abort-controller@^3.0.0:
   version "3.0.0"

@@ -1,4 +1,4 @@
-import React from 'react';
+import {useRef} from 'react';
 import { StyleSheet, View } from 'react-native';
 
 import * as ZIM from 'zego-zim-react-native';
@@ -16,6 +16,7 @@ import { CustomBuilder } from './CustomBuilder';
 import KeyCenter from "./KeyCenter";
 
 export default function AudiencePage(props) {
+  const prebuiltRef = useRef(null);
   const { route } = props;
   const { params } = route;
   const { userID, userName, liveID } = params;
@@ -23,6 +24,7 @@ export default function AudiencePage(props) {
   return (
     <View style={styles.container}>
       <ZegoUIKitPrebuiltLiveStreaming
+        ref={prebuiltRef}
         appID={KeyCenter.appID}
         appSign={KeyCenter.appSign}
         userID={userID}
@@ -63,6 +65,9 @@ export default function AudiencePage(props) {
           audienceAudioVideoResourceMode: ZegoAudioVideoResourceMode.Default,
           video: ZegoUIKitVideoConfig.preset720P(),
           roomConfig: {
+            onJoinRoom: () => {
+                prebuiltRef.current?.addSystemMessage?.('I have entered the room.');
+            },
             onUsersEnter: (userInfoList) => {
                 console.log('########AudiencePage onUsersEnter', userInfoList);
             },
