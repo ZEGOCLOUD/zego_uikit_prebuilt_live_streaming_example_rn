@@ -1767,6 +1767,11 @@
   dependencies:
     nanoid "^3.3.11"
 
+"@sayem314/react-native-keep-awake@^1.4.0":
+  version "1.4.0"
+  resolved "https://registry.yarnpkg.com/@sayem314/react-native-keep-awake/-/react-native-keep-awake-1.4.0.tgz#2f072e7866df56588ceae0c985f196f49a4176a9"
+  integrity sha512-EOg6im5sSuwPC3hamXjW2kb6KB1HuluivdGzjvIRAeeEH7cVyaBTcSaV3SZerQRImTxoaVLMnD1FOEyQQK6etg==
+
 "@sideway/address@^4.1.5":
   version "4.1.5"
   resolved "https://registry.npmmirror.com/@sideway/address/-/address-4.1.5.tgz#4bc149a0076623ced99ca8208ba780d65a99b9d5"
@@ -2014,10 +2019,10 @@
   resolved "https://registry.npmmirror.com/@vscode/sudo-prompt/-/sudo-prompt-9.3.1.tgz#c562334bc6647733649fd42afc96c0eea8de3b65"
   integrity sha512-9ORTwwS74VaTn38tNbQhsA5U44zkJfcb0BdTSyyG6frP4e8KMtHuTXYmwefe5dpL8XB1aGSIVTaLjD3BbWb5iA==
 
-"@zegocloud/zego-uikit-prebuilt-live-streaming-rn@^2.9.0":
-  version "2.9.0"
-  resolved "https://registry.yarnpkg.com/@zegocloud/zego-uikit-prebuilt-live-streaming-rn/-/zego-uikit-prebuilt-live-streaming-rn-2.9.0.tgz#145a82d7c0580c7a7e0d743aa1f507fdb958e826"
-  integrity sha512-TM9NxEK4oRo64s/BGluKFsp6hKYND6WGH6o4InUFzz0dqPh6GAJCWBoBwn1XHvLatJttuEhTo61Z2Lg1vP7QYQ==
+"@zegocloud/zego-uikit-prebuilt-live-streaming-rn@^2.9.1":
+  version "2.9.1"
+  resolved "https://registry.yarnpkg.com/@zegocloud/zego-uikit-prebuilt-live-streaming-rn/-/zego-uikit-prebuilt-live-streaming-rn-2.9.1.tgz#769074b73656541737bd5e4d9b305e6081322ee1"
+  integrity sha512-A72N3KsztpDva3hyRTNFP0Vx+7dHM6bqyP/hQHtmfu/5ImGDtPyWQJWfv0g+sCUYRmvDMyDu7HN2A6CTWH+jlw==
 
 "@zegocloud/zego-uikit-rn@^2.19.1":
   version "2.19.1"

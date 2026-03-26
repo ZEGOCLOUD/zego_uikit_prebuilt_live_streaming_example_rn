@@ -35,7 +35,7 @@
     "typescript": "^5.8.3",
 
     "@zegocloud/zego-uikit-rn": "^2.19.1",
-    "@zegocloud/zego-uikit-prebuilt-live-streaming-rn": "^2.9.0",
+    "@zegocloud/zego-uikit-prebuilt-live-streaming-rn": "^2.9.1",
     "zego-express-engine-reactnative": "^3.22.0",
     "zego-zim-react-native": "^2.20.0",
 
@@ -46,7 +46,8 @@
 
     "react-delegate-component": "^1.0.0",
     "react-native-device-info": "^14.0.4",
-    "react-native-orientation-locker": "^1.7.0"
+    "react-native-orientation-locker": "^1.7.0",
+    "@sayem314/react-native-keep-awake": "^1.4.0"
   },
   "engines": {
     "node": ">=20"
